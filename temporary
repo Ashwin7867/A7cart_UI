@@ -1,0 +1,76 @@
+<View style={styles.per_details}>
+                        <Text style={styles.heading1}>
+                            {'Personal Details'}
+                        </Text>
+                        <View style={styles.nameContainer}>
+                            <View style={styles.fn_container}>
+                                <FloatingTitleTextInputField attrName='first_name'
+                                    title='Enter First Name'
+                                    value={first_name}
+                                    updateMasterState={this._updateMasterState}
+                                    textInputStyles={{
+                                        color: 'black',
+                                        fontSize: 15,
+                                        width: 150,
+                                    }} />
+                            </View>
+                            <View style={styles.ln_container}>
+                                <FloatingTitleTextInputField attrName='last_name'
+                                    title='Enter Last Name'
+                                    value={last_name}
+                                    updateMasterState={this._updateMasterState}
+                                    textInputStyles={{
+                                        color: 'black',
+                                        fontSize: 15,
+                                        width: 150,
+                                    }} />
+                            </View>
+                        </View>
+                        <View style={styles.phone_no_container}>
+                            <FloatingTitleTextInputField attrName='phone_number'
+                                title='Contact number to say hello'
+                                value={phone_number}
+                                updateMasterState={this._updateMasterState}
+                                textInputStyles={{
+                                    color: 'black',
+                                    fontSize: 15,
+                                    width: 150
+                                }} />
+                        </View>
+                    </View>
+
+
+
+
+
+ per_details: {
+        flexDirection: 'column',
+        marginTop: 30
+    },
+    heading1: {
+        fontWeight: 'bold',
+        fontSize: 16,
+        paddingLeft: 15
+    },
+    nameContainer: {
+        flexDirection: 'row',
+        alignContent: 'flex-start',
+        marginTop: 15
+    },
+    fn_container: {
+        flex: 1,
+        backgroundColor: 'white',
+        marginLeft: 35,
+    },
+    ln_container: {
+        flex: 1,
+        backgroundColor: 'white',
+        marginLeft: 20
+    },
+    phone_no_container: {
+        justifyContent: 'flex-start',
+        alignItems: 'flex-start',
+        backgroundColor: 'white',
+        marginLeft: 35,
+        marginTop: 15
+    },
